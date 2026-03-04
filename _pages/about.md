@@ -1,15 +1,27 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Clean Homepage Intro"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+## দাউদ খান
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+C++ / Systems Engineer based in Japan.
+
+I work on large-scale industrial SMT systems, focusing on system architecture, execution flow analysis, and deep debugging of legacy C++ codebases.
+
+My interests include:
+- Reverse-engineering complex systems
+- Designing clean execution architectures
+- Performance-aware C++ engineering
+- Algorithms and core computer science fundamentals
+
+This site serves as a structured log of my engineering work, architectural insights, and technical learning.
+
+I document real-world system behavior, execution traces, debugging strategies, and architectural breakdowns — with an emphasis on clarity and long-term maintainability.
 
 A data-driven personal website
 ======

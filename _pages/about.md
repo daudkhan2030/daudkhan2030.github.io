@@ -5,7 +5,6 @@ title: "Clean Homepage Intro"
 author_profile: true
 redirect_from: 
   - /about/
-  - /about.html
 ---
 
 ## দাউদ খান

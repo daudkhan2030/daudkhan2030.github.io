@@ -1,5 +1,6 @@
 ---
-permalink: /
+title: "About"
+permalink: /about/
 title: "Clean Homepage Intro"
 author_profile: true
 redirect_from: 

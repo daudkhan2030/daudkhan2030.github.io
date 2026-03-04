@@ -1,4 +1,16 @@
-# Virtual Functi- Pure Virtual - Override - Abstraction
+---
+title: "About Virtual Function - Pure Virtual Function - Override - Abstraction"
+date: 2026-03-04
+layout: single
+categories: 
+  - engineering
+tags:
+  - distributed-systems
+  - caching
+  - architecture
+---
+
+# Things to know about Virtual Function - Pure Virtual Function - Override - Abstraction
 
 🎐🎐🎐🎐🎐🎐🎐🎐🎐🎐 🎐🎐🎐🎐🎐🎐🎐🎐🎐🎐 🎐🎐🎐🎐🎐🎐🎐🎐🎐🎐 🎐🎐🎐🎐🎐🎐
 

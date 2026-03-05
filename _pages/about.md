@@ -1,10 +1,8 @@
 ---
-title: "About"
-permalink: /about/
 title: "Clean Homepage Intro"
+layout: single
+permalink: /about/
 author_profile: true
-redirect_from: 
-  - /about/
 ---
 
 ## দাউদ খান

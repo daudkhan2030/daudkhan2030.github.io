@@ -1,8 +1,8 @@
 ---
 title: "C++ / Engineering"
-layout: archive
+layout: single
 permalink: /engineering/
-author_profile: false
+author_profile: true
 ---
 
 {% assign posts = site.posts | where_exp: "post", "post.categories contains 'engineering'" %}

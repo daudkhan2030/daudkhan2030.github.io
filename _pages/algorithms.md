@@ -1,6 +1,6 @@
 ---
 title: "Algorithms & CS"
-layout: single
+layout: splash
 permalink: /algorithms/
 author_profile: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "C++ / Engineering"
-layout: single
+layout: splash
 permalink: /engineering/
 author_profile: true
 ---

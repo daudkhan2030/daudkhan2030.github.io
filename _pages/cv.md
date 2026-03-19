@@ -1,6 +1,6 @@
 ---
 title: "CV"
-layout: single
+layout: splash
 permalink: /cv/
 author_profile: true
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Algorithms & CS"
-layout: archive
+layout: single
 permalink: /algorithms/
-author_profile: false
+author_profile: true
 ---
 {% assign posts = site.posts | where_exp: "post", "post.categories contains 'algorithms'" %}
 

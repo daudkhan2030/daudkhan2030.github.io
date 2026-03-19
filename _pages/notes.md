@@ -1,6 +1,6 @@
 ---
 title: "Notes / Learning Log"
-layout: archive
+layout: single
 permalink: /notes/
 author_profile: true
 ---

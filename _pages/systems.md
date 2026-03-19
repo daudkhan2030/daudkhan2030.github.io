@@ -1,6 +1,6 @@
 ---
 title: "Systems & Architecture"
-layout: single
+layout: splash
 permalink: /systems/
 author_profile: true
 ---

@@ -33,29 +33,20 @@
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "American International University - Bangladesh (AIUB)",
+      "area": "Master of Science in Computer Science (MSc in CS)",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
+      "endDate": "Sep 2019 - Oct 2021",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "East West University",
+      "area": "Bachelor of Computer Science and Engineering",
       "studyType": "",
       "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "endDate": "May 2014 - Oct 2018",
       "gpa": null,
       "courses": []
     }

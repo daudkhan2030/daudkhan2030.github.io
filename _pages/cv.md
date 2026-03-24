@@ -5,10 +5,23 @@ permalink: /cv/
 author_profile: false
 ---
 
-Education
-======
-* Master of Computer Science,                     American International University - Bangladesh (AIUB),  Sep 2019 - Oct 2021
-* Bachelor of Computer Science and Engineering,   East West University,                                   May 2014 - Oct 2018
+<h2>Education</h2>
+
+<div class="edu-item">
+  <div class="edu-left">
+    <strong>Master of Computer Science</strong><br>
+    American International University - Bangladesh (AIUB)
+  </div>
+  <div class="edu-date">Sep 2019 - Oct 2021</div>
+</div>
+
+<div class="edu-item">
+  <div class="edu-left">
+    <strong>Bachelor of Computer Science and Engineering</strong><br>
+    East West University
+  </div>
+  <div class="edu-date">May 2014 - Oct 2018</div>
+</div>
 
 Work experience
 ======

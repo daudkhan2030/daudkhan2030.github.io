@@ -7,9 +7,8 @@ author_profile: false
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Master of Computer Science, American International University - Bangladesh (AIUB), Sep 2019 - Oct 2021
+* Bachelor of Computer Science and Engineering, East West University, May 2014 - Oct 2018
 
 Work experience
 ======

@@ -1,43 +1,36 @@
----
----
+// ==========================
+// Custom CV Styling
+// ==========================
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
+.edu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 10px;
+}
 
-@import
-    "vendor/breakpoint/breakpoint",
+.edu-left {
+  max-width: 75%;
+}
 
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+.edu-date {
+  white-space: nowrap;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
 
-    "include/mixins",
-    "vendor/susy/susy",
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .edu-item {
+    flex-direction: column;
+  }
 
-    "layout/reset",
-    "layout/base",
+  .edu-left {
+    max-width: 100%;
+  }
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+  .edu-date {
+    margin-top: 4px;
+  }
+}

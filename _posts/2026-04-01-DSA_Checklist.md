@@ -6,10 +6,10 @@ categories:
   - engineering
 ---
 
-| **Topics** 
+| **Topics** | **Concept** | **Understood** | **Leetcode Solved in this** | **Revision Date** | Others | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| 01 | 🔰 Fundamentals
-|  | ⬜ Programming Basics (I/O, Conditions, Loops, Functions, OOP)
+| 01 | 🔰 Fundamentals | ⬜ |  |  |  |  |
+|  | ⬜ Programming Basics (I/O, Conditions, Loops, Functions, OOP) | ⬜ |  |  |  |  |
 |  | ⬜ Complexity Analysis (Big-O, Theta, Omega, Time, Space) | ⬜ |  |  |  |  |
 | 02 | 🧮 Maths, Pattern & Recursion | ⬜ |  |  |  |  |
 |  | ⬜ Maths Basics | ⬜ |  |  |  |  |

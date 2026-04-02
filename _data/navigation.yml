@@ -14,13 +14,13 @@ main:
   - title: "Work / Experience"
     url: /cv/    
 
-  - title: "Systems & Architecture"
+  - title: "Systems"
     url: /systems/    
     
-  - title: "C++ / Engineering"
+  - title: "Programming"
     url: /engineering/
         
-  - title: "Algorithms & CS"
+  - title: "Algorithms"
     url: /algorithms/
     
   - title: "Notes / Learning Log"

@@ -1,5 +1,5 @@
 ---
-title: "C++ / Engineering"
+title: "Programming"
 layout: splash
 permalink: /engineering/
 author_profile: true

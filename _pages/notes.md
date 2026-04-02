@@ -1,9 +1,8 @@
 ---
-layout: single
+layout: archive
 permalink: /notes/
 author_profile: false
 ---
-
 {% assign posts = site.posts | where_exp: "post", "post.categories contains 'notes'" %}
 
 {% for post in posts %}

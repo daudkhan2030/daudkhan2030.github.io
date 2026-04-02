@@ -44,7 +44,7 @@ b = a ^ b;
 a = a ^ b;
 </pre>
 
-</pre>
+<pre>
 a = 5 → 101  ,  b = 3 → 011
 
  1.  a       1 0 1
@@ -58,6 +58,7 @@ a = 5 → 101  ,  b = 3 → 011
  3.  a       1 1 0
    ^ b;    ^ 1 0 1
            = 0 1 1 (3)
+</pre>
 
 👉 তুমি ভাবতে পারো:
 
@@ -71,6 +72,7 @@ a = a ^ b   → a থেকে a remove → b পাওয়া যায়
 🧠 super short summary
 - same value দিয়ে twice XOR করলে original ফিরে আসে
 
+<pre>
 a = a ^ b
 b = a ^ b → gets a
 a = a ^ b → gets b

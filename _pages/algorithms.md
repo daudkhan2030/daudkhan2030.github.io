@@ -1,5 +1,5 @@
 ---
-title: "Algorithms & CS"
+title: "Algorithms"
 layout: splash
 permalink: /algorithms/
 author_profile: true

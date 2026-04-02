@@ -5,7 +5,6 @@ layout: single
 categories:
   - notes
 ---
-
 - How to Think Like a V&V Engineer in Autonomous Systems
 
 Autonomous vehicle system (AV system) শুধু code বা algorithm না — এটা একটি **complex integrated system** যেখানে perception, planning, এবং control একসাথে কাজ করে।

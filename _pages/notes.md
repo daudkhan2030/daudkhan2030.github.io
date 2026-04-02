@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: splash
 permalink: /notes/
 author_profile: false
 ---

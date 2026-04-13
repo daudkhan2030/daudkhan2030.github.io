@@ -9,7 +9,7 @@ categories:
 | **Topics** | **Concept** | **Understood** | **Leetcode Solved in this** | **Revision Date** | Others | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | 01 | 🔰 [Fundamentals](https://www.geeksforgeeks.org/dsa/swap-two-numbers-without-using-temporary-variable/) | ⬜ |  |  |  |  |
-|  | ⬜ [Fundamentals]([https://www.geeksforgeeks.org/dsa/swap-two-numbers-without-using-temporary-variable/](https://www.notion.so/Need-to-remember-stuffs-3413dff1c30a8040880ccc78a3583098?source=copy_link))  (I/O, Conditions, Loops, Functions, OOP) | ⬜ |  |  |  |  |
+|  | ⬜ [Programming Basics]([https://www.geeksforgeeks.org/dsa/swap-two-numbers-without-using-temporary-variable/](https://www.notion.so/Need-to-remember-stuffs-3413dff1c30a8040880ccc78a3583098?source=copy_link))  (I/O, Conditions, Loops, Functions, OOP) | ⬜ |  |  |  |  |
 |  | ⬜ Complexity Analysis (Big-O, Theta, Omega, Time, Space) | ⬜ |  |  |  |  |
 | 02 | 🧮 Maths, Pattern & Recursion | ⬜ |  |  |  |  |
 |  | ⬜ Maths Basics | ⬜ |  |  |  |  |

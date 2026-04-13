@@ -8,7 +8,7 @@ categories:
 
 | **Topics** | **Concept** | **Understood** | **Leetcode Solved in this** | **Revision Date** | Others | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| 01 | 🔰 [Fundamentals]([https://your-link-here.com](https://www.geeksforgeeks.org/dsa/swap-two-numbers-without-using-temporary-variable/)) | ⬜ |  |  |  |  |
+| 01 | 🔰 [Fundamentals](https://www.geeksforgeeks.org/dsa/swap-two-numbers-without-using-temporary-variable/) | ⬜ |  |  |  |  |
 |  | ⬜ Programming Basics (I/O, Conditions, Loops, Functions, OOP) | ⬜ |  |  |  |  |
 |  | ⬜ Complexity Analysis (Big-O, Theta, Omega, Time, Space) | ⬜ |  |  |  |  |
 | 02 | 🧮 Maths, Pattern & Recursion | ⬜ |  |  |  |  |

@@ -45,16 +45,28 @@ Step by step XOR করলে:
 ## ⚡ Code (C++)
 
 ```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
         int a = 0;
-        for (int x : nums) {
+        for(int x: nums){
             a ^= x;
         }
         return a;
     }
 };
+
+int main()
+{
+    vector<int> nums = {2,2,1};
+    Solution obj;
+    int a = obj.singleNumber(nums);
+    cout << a << endl;
+}
 ```
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "🏮 Search Colour Highlight & Gibberish Japanese to Original UTF-8"
+title: "🌸 LeetCode Problem 136: Single Number — XOR দিয়ে Efficient Solution"
 date: 2026-04-14
 layout: single
 categories:

@@ -1,6 +1,6 @@
 ---
 title: "🧩 C++ Notes: Static, Singleton, Factory Method & Struct Concepts"
-date: 2026-05-11
+date: 2026-05-12
 layout: single
 categories:
   - systems
@@ -43,6 +43,7 @@ struct T_ROW_AVL_DATA
     CHAR  szTrayPos[TRAY_POS_LEN];
     CHAR  szAVLName[PROG_AVLNAME_AREA];
 };
+
 ✅ C Struct
 typedef struct
 {
@@ -85,7 +86,6 @@ Singleton-এর main idea:
 একসাথে এক জায়গায়ই কাজ করবে ❌
 
 বরং:
-
 same object অনেক জায়গা থেকে use হতে পারে ✅
 অনেক class একই object access করতে পারে ✅
 
@@ -155,7 +155,6 @@ a.count
 b.count
 
 দুটোই same memory access করে।
-
 কারণ: count কে static করা হয়েছে।
 
 🧠 Important Understanding

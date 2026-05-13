@@ -31,10 +31,11 @@ body{
 
 .glass-container{
   display:grid;
-  grid-template-columns:minmax(260px,320px) 1fr;
-  gap:24px;
+  grid-template-columns:320px minmax(0,1fr);
+  gap:28px;
   margin-top:20px;
   align-items:start;
+  width:100%;
 }
 
 /* ===== GLASS EFFECT ===== */
@@ -52,10 +53,11 @@ body{
 .sidebar{
   border-radius:28px;
   padding:28px;
-  position:sticky;
-  top:20px;
-  height:fit-content;
-  overflow:hidden;
+  position:relative;
+  width:100%;
+  min-width:280px;
+  box-sizing:border-box;
+  overflow:visible;
 }
 
 .name{

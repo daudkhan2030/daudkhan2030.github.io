@@ -7,27 +7,32 @@ author_profile: false
 
 <style>
 
-body{
-  background:
-    radial-gradient(circle at top left, rgba(56,189,248,0.18), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(168,85,247,0.18), transparent 28%),
-    #0f172a;
-}
+/* ===== PAGE ===== */
 
 .page__content{
-  max-width:1450px !important;
+  max-width:1400px !important;
 }
 
-/* MAIN LAYOUT */
+body{
+  background:
+    radial-gradient(circle at top left, rgba(56,189,248,0.16), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(168,85,247,0.14), transparent 28%),
+    #081120;
+  color:white;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+/* ===== MAIN LAYOUT ===== */
 
 .glass-container{
   display:grid;
-  grid-template-columns:320px 1fr;
+  grid-template-columns:minmax(260px,320px) 1fr;
   gap:24px;
   margin-top:20px;
+  align-items:start;
 }
 
-/* GLASS EFFECT */
+/* ===== GLASS EFFECT ===== */
 
 .glass{
   background:rgba(255,255,255,0.08);
@@ -37,7 +42,7 @@ body{
   box-shadow:0 8px 32px rgba(0,0,0,0.25);
 }
 
-/* SIDEBAR */
+/* ===== SIDEBAR ===== */
 
 .sidebar{
   border-radius:28px;
@@ -45,13 +50,14 @@ body{
   position:sticky;
   top:20px;
   height:fit-content;
+  overflow:hidden;
 }
 
 .name{
-  font-size:2.2rem;
+  font-size:2.3rem;
   font-weight:800;
-  color:#ffffff;
   line-height:1.1;
+  color:white;
 }
 
 .role{
@@ -59,12 +65,13 @@ body{
   color:#7dd3fc;
   font-size:1rem;
   font-weight:600;
+  line-height:1.6;
 }
 
-.desc{
+.summary{
   margin-top:20px;
   color:#dbeafe;
-  line-height:1.8;
+  line-height:1.9;
   font-size:0.95rem;
 }
 
@@ -92,25 +99,37 @@ body{
   font-size:0.82rem;
 }
 
-/* MAIN CONTENT */
+.lang{
+  margin-bottom:10px;
+  color:#dbeafe;
+  line-height:1.6;
+}
+
+/* ===== MAIN ===== */
 
 .main{
   display:flex;
   flex-direction:column;
-  gap:22px;
+  gap:24px;
 }
 
 .card{
   border-radius:28px;
-  padding:28px;
+  padding:32px;
   color:white;
 }
 
 .card-title{
-  font-size:1.4rem;
-  font-weight:700;
-  margin-bottom:22px;
-  color:#ffffff;
+  font-size:1.9rem;
+  font-weight:800;
+  margin-bottom:20px;
+  color:white;
+}
+
+.hero-text{
+  color:#dbeafe;
+  line-height:1.95;
+  font-size:1.03rem;
 }
 
 .highlight{
@@ -118,7 +137,7 @@ body{
   font-weight:700;
 }
 
-/* TIMELINE */
+/* ===== TIMELINE ===== */
 
 .timeline{
   position:relative;
@@ -127,7 +146,7 @@ body{
 .timeline:before{
   content:"";
   position:absolute;
-  left:108px;
+  left:118px;
   top:0;
   bottom:0;
   width:2px;
@@ -137,75 +156,77 @@ body{
 .timeline-item{
   display:grid;
   grid-template-columns:90px 1fr;
-  gap:38px;
-  margin-bottom:30px;
+  gap:40px;
+  margin-bottom:34px;
   position:relative;
 }
 
 .timeline-date{
   color:#7dd3fc;
   font-weight:700;
-  font-size:0.9rem;
+  font-size:0.95rem;
+  line-height:1.8;
 }
 
 .timeline-content{
   position:relative;
-  padding-left:12px;
+  padding-left:14px;
 }
 
 .timeline-content:before{
   content:"";
-  width:12px;
-  height:12px;
+  width:13px;
+  height:13px;
   border-radius:50%;
   background:#38bdf8;
   position:absolute;
-  left:-24px;
-  top:6px;
-  box-shadow:0 0 14px rgba(56,189,248,0.8);
+  left:-25px;
+  top:7px;
+  box-shadow:0 0 16px rgba(56,189,248,0.85);
 }
 
 .timeline-content strong{
   display:block;
-  color:#ffffff;
-  margin-bottom:6px;
+  color:white;
+  margin-bottom:8px;
+  font-size:1.05rem;
 }
 
 .timeline-content p{
   margin:0;
   color:#dbeafe;
-  line-height:1.7;
+  line-height:1.8;
 }
 
-/* GRID */
+/* ===== LOWER GRID ===== */
 
 .grid-2{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:22px;
+  gap:24px;
 }
 
 .small-card{
   border-radius:24px;
-  padding:22px;
+  padding:24px;
   color:white;
 }
 
 .small-title{
-  font-size:1.1rem;
+  font-size:1.15rem;
   font-weight:700;
-  margin-bottom:14px;
-  color:#ffffff;
+  margin-bottom:16px;
+  color:white;
 }
 
 .small-text{
   color:#dbeafe;
-  line-height:1.8;
+  line-height:1.9;
 }
 
-/* MOBILE */
+/* ===== MOBILE ===== */
 
-@media(max-width:1000px){
+@media(max-width:1200px){
 
   .glass-container{
     grid-template-columns:1fr;
@@ -214,15 +235,20 @@ body{
   .sidebar{
     position:relative;
     top:0;
+    width:100%;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .timeline:before{
+    display:none;
   }
 
   .timeline-item{
     grid-template-columns:1fr;
     gap:8px;
-  }
-
-  .timeline:before{
-    display:none;
   }
 
   .timeline-content:before{
@@ -233,26 +259,41 @@ body{
     grid-template-columns:1fr;
   }
 
+  .card{
+    padding:24px;
+  }
+
+  .name{
+    font-size:2rem;
+  }
+
+  .card-title{
+    font-size:1.6rem;
+  }
+
 }
 
 </style>
 
 <div class="glass-container">
 
-<!-- SIDEBAR -->
+<!-- ===== SIDEBAR ===== -->
 
 <div class="sidebar glass">
 
 <div class="name">
-MD Daud<br>Ali Khan
+MD Daud<br>
+Ali Khan
 </div>
 
 <div class="role">
 Embedded Systems & Validation Engineer
 </div>
 
-<div class="desc">
-Embedded Systems Engineer based in Japan working on RTOS-based industrial SMT systems involving simulation-driven debugging, runtime analysis, integration testing, and system-level validation using C/C++.
+<div class="summary">
+
+Embedded Systems Engineer based in Japan with experience in RTOS-based industrial systems, simulation-driven debugging, runtime analysis, and integration testing using C/C++.
+
 </div>
 
 <div class="section">
@@ -281,30 +322,34 @@ Core Skills
 Languages
 </div>
 
-<div class="desc">
-Bangla — Native<br>
-English — Fluent<br>
-Japanese — Conversational (JLPT N3)<br>
-Hindi / Urdu — Conversational
-</div>
+<div class="lang">Bangla — Native</div>
+<div class="lang">English — Fluent</div>
+<div class="lang">Japanese — Conversational (JLPT N3)</div>
+<div class="lang">Hindi / Urdu — Conversational</div>
 
 </div>
 
 </div>
 
-<!-- MAIN -->
+<!-- ===== MAIN ===== -->
 
 <div class="main">
 
 <div class="card glass">
 
 <div class="card-title">
-Current Focus
+Building Reliability for Complex Real-Time Systems
 </div>
 
-Working on <span class="highlight">large-scale industrial SMT systems</span> involving RTOS-based embedded applications, SILS validation, runtime behavior analysis, and software-hardware integration testing.
+<div class="hero-text">
 
-Interested in transitioning toward <span class="highlight">autonomous systems validation, safety-critical verification, and complex real-time system reliability engineering.</span>
+Currently working on <span class="highlight">large-scale industrial SMT systems</span> involving RTOS-based embedded applications, simulation-driven validation, runtime debugging, and software-hardware integration testing.
+
+My work focuses on understanding how systems behave under real execution conditions — analyzing timing behavior, runtime interactions, defect reproduction, and reliability issues across software and hardware layers.
+
+I am actively transitioning toward roles involving <span class="highlight">autonomous systems testing, V&V, and safety-critical system reliability engineering.</span>
+
+</div>
 
 </div>
 

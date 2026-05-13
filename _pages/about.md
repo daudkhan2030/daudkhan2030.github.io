@@ -1,124 +1,258 @@
 ---
-title: "Embedded Systems & Validation Engineer"
-layout: single
+title: "About"
+layout: splash
 permalink: /about/
-author_profile: true
+author_profile: false
+classes: wide
 ---
 
 <style>
 
+/* =========================
+   PAGE
+========================= */
+
+.page,
 .page__content{
-  max-width:1400px !important;
+  max-width:100% !important;
 }
+
+body{
+  background:
+    radial-gradient(circle at top left, rgba(59,130,246,0.18), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(168,85,247,0.16), transparent 28%),
+    #06101f;
+  color:white;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+/* =========================
+   LAYOUT
+========================= */
 
 .about-container{
   display:grid;
-  grid-template-columns:1.2fr 0.9fr;
-  gap:24px;
-  margin-top:20px;
+  grid-template-columns:320px minmax(0,1fr);
+  gap:28px;
+  align-items:start;
+  margin-top:18px;
 }
 
-.hero-card{
-  background:linear-gradient(135deg,#0f172a,#1e293b);
+/* =========================
+   GLASS CARD
+========================= */
+
+.glass{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:28px;
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+  padding:34px 28px;
+  position:sticky;
+  top:20px;
+  overflow:hidden;
+}
+
+.name{
+  font-size:2.1rem;
+  font-weight:800;
   color:white;
-  padding:34px;
-  border-radius:24px;
-  border:1px solid #334155;
-  box-shadow:0 8px 30px rgba(0,0,0,0.15);
+  line-height:1.2;
+  letter-spacing:-0.5px;
+  white-space:nowrap;
+}
+
+.role{
+  margin-top:14px;
+  color:#5cc8ff;
+  font-size:1.15rem;
+  font-weight:600;
+  line-height:1.7;
+}
+
+.summary{
+  margin-top:28px;
+  color:#d7e7ff;
+  line-height:2;
+  font-size:1rem;
+}
+
+.sidebar-divider{
+  height:1px;
+  background:rgba(255,255,255,0.08);
+  margin:28px 0;
+}
+
+.sidebar-title{
+  color:#5cc8ff;
+  font-size:0.9rem;
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:18px;
+  text-transform:uppercase;
+}
+
+/* =========================
+   TAGS
+========================= */
+
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.tag{
+  padding:9px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.08);
+  color:#eaf4ff;
+  font-size:0.84rem;
+  line-height:1;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main{
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-card{
+  padding:42px;
 }
 
 .hero-title{
-  font-size:2.5rem;
+  font-size:3rem;
   font-weight:800;
-  line-height:1.15;
-  margin-bottom:14px;
-}
-
-.hero-highlight{
-  color:#38bdf8;
+  line-height:1.2;
+  margin-bottom:26px;
+  color:white;
+  letter-spacing:-1px;
 }
 
 .hero-text{
-  color:#cbd5e1;
-  font-size:1rem;
-  line-height:1.9;
-}
-
-.grid-right{
-  display:flex;
-  flex-direction:column;
-  gap:22px;
-}
-
-.info-card{
-  background:#ffffff;
-  border-radius:20px;
-  padding:24px;
-  border:1px solid #e5e7eb;
-  box-shadow:0 4px 20px rgba(0,0,0,0.04);
-}
-
-.info-title{
-  font-size:1.1rem;
-  font-weight:700;
-  margin-bottom:16px;
-  color:#0f172a;
-}
-
-.skill-tag{
-  display:inline-block;
-  padding:8px 12px;
-  margin:5px;
-  background:#eff6ff;
-  color:#0369a1;
-  border-radius:999px;
-  font-size:0.85rem;
-  font-weight:600;
-}
-
-.focus-item{
-  padding:10px 0;
-  border-bottom:1px solid #e5e7eb;
-  color:#374151;
-}
-
-.focus-item:last-child{
-  border-bottom:none;
-}
-
-.statement-card{
-  margin-top:24px;
-  background:#f8fafc;
-  border:1px solid #e2e8f0;
-  padding:28px;
-  border-radius:20px;
-}
-
-.statement-title{
-  font-size:1.3rem;
-  font-weight:700;
-  margin-bottom:16px;
-  color:#0f172a;
-}
-
-.statement-text{
-  line-height:1.9;
-  color:#475569;
+  font-size:1.08rem;
+  line-height:2;
+  color:#d7e7ff;
 }
 
 .highlight{
-  color:#0284c7;
+  color:#59c7ff;
   font-weight:700;
 }
 
-@media(max-width:1000px){
+/* =========================
+   CONTENT SECTIONS
+========================= */
+
+.content-card{
+  padding:40px;
+}
+
+.section-title{
+  font-size:2rem;
+  font-weight:800;
+  margin-bottom:28px;
+  color:white;
+}
+
+.content-text{
+  color:#d7e7ff;
+  line-height:2;
+  font-size:1.03rem;
+}
+
+.content-text p{
+  margin-bottom:24px;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  margin-top:24px;
+}
+
+.feature-card{
+  padding:28px;
+  border-radius:22px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.06);
+}
+
+.feature-title{
+  color:white;
+  font-size:1.2rem;
+  font-weight:700;
+  margin-bottom:16px;
+}
+
+.feature-list{
+  color:#d7e7ff;
+  line-height:2;
+  padding-left:18px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:1200px){
 
   .about-container{
     grid-template-columns:1fr;
   }
 
+  .sidebar{
+    position:relative;
+    top:0;
+  }
+
   .hero-title{
-    font-size:2rem;
+    font-size:2.3rem;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .hero-card,
+  .content-card{
+    padding:28px;
+  }
+
+  .hero-title{
+    font-size:1.9rem;
+    line-height:1.4;
+  }
+
+  .name{
+    white-space:normal;
+    font-size:1.8rem;
+  }
+
+  .feature-grid{
+    grid-template-columns:1fr;
   }
 
 }
@@ -127,111 +261,161 @@ author_profile: true
 
 <div class="about-container">
 
-<!-- LEFT SIDE -->
+<!-- SIDEBAR -->
 
-<div>
+<div class="sidebar glass">
 
-<div class="hero-card">
+<div class="name">
+MD Daud Ali Khan
+</div>
+
+<div class="role">
+Embedded Systems &<br>
+Validation Engineer
+</div>
+
+<div class="summary">
+
+Embedded Systems Engineer focused on system validation, simulation-driven debugging, and reliability analysis for complex real-time industrial systems.
+
+</div>
+
+<div class="sidebar-divider"></div>
+
+<div class="sidebar-title">
+Focus Areas
+</div>
+
+<div class="tags">
+
+<div class="tag">RTOS</div>
+<div class="tag">C/C++</div>
+<div class="tag">SILS</div>
+<div class="tag">System Validation</div>
+<div class="tag">Runtime Analysis</div>
+<div class="tag">Integration Testing</div>
+<div class="tag">Debugging</div>
+<div class="tag">Embedded Systems</div>
+<div class="tag">V&V</div>
+<div class="tag">Real-Time Systems</div>
+
+</div>
+
+<div class="sidebar-divider"></div>
+
+<div class="sidebar-title">
+Interests
+</div>
+
+<div class="tags">
+
+<div class="tag">Autonomous Systems</div>
+<div class="tag">Safety-Critical Systems</div>
+<div class="tag">Simulation Testing</div>
+<div class="tag">System Reliability</div>
+<div class="tag">Cyber-Physical Systems</div>
+
+</div>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="hero-card glass">
 
 <div class="hero-title">
-Embedded Systems <span class="hero-highlight">& Validation Engineer</span>
+Understanding How Real-Time Systems Behave at Runtime
 </div>
 
 <div class="hero-text">
 
-I work on large-scale industrial SMT systems involving <span class="hero-highlight">RTOS-based embedded applications, simulation-driven validation, runtime debugging, and software-hardware integration testing</span> using C/C++.
+I currently work on <span class="highlight">large-scale SMT (Surface Mount Technology) systems</span>, where I contribute to validating and troubleshooting C/C++ based applications operating in real-time and hardware-integrated environments.
 
-My current role focuses on analyzing complex system behavior across application, middleware, motion-control, and hardware interaction layers to identify defects, validate reliability, and reproduce real-world issues through structured debugging workflows.
-
-With experience in real-time industrial systems and system-level validation, I am particularly interested in applying these foundations toward <span class="hero-highlight">autonomous systems testing, safety-critical verification, and large-scale system reliability engineering.</span>
+My work involves investigating system behavior across software, middleware, motion-control, and hardware interaction layers using simulation-based workflows and structured debugging approaches.
 
 </div>
 
 </div>
 
-<div class="statement-card">
+<div class="content-card glass">
 
-<div class="statement-title">
-Engineering Approach
+<div class="section-title">
+Engineering Background
 </div>
 
-<div class="statement-text">
+<div class="content-text">
 
-I am most interested in understanding how systems behave at runtime — not only at the source code level, but across the interaction between software, control systems, timing behavior, middleware, and hardware environments.
+<p>
+With over 3 years of experience in embedded and system-level engineering, I have developed strong experience in system-level debugging, simulation-driven validation, integration testing, runtime analysis, and defect reproduction across complex RTOS-based systems.
+</p>
 
-My work often involves tracing execution flow, reproducing difficult defects, analyzing state transitions, and validating whether complex systems behave reliably under real-time constraints.
+<p>
+My current role has given me practical exposure to the kinds of reliability and verification challenges found in complex cyber-physical systems — particularly where software behavior must remain stable under tightly coordinated hardware interactions and real-time constraints.
+</p>
 
-This site serves as a structured record of my engineering work, debugging experiences, validation strategies, architectural learning, and system behavior analysis with an emphasis on <span class="highlight">clarity, reproducibility, and long-term maintainability.</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- RIGHT SIDE -->
-
-<div class="grid-right">
-
-<div class="info-card">
-
-<div class="info-title">
-Core Experience
-</div>
-
-<span class="skill-tag">C++</span>
-<span class="skill-tag">C</span>
-<span class="skill-tag">RTOS Validation</span>
-<span class="skill-tag">SILS</span>
-<span class="skill-tag">Runtime Debugging</span>
-<span class="skill-tag">System Validation</span>
-<span class="skill-tag">Integration Testing</span>
-<span class="skill-tag">Root Cause Analysis</span>
-<span class="skill-tag">Middleware Analysis</span>
-<span class="skill-tag">Hardware Interaction</span>
-<span class="skill-tag">Legacy C++ Systems</span>
+<p>
+While my background comes from industrial automation systems, I am increasingly focused on applying these foundations toward autonomous and intelligent systems testing, especially in areas involving simulation-based validation, safety-critical behavior analysis, software and hardware integration testing, and large-scale embedded system reliability.
+</p>
 
 </div>
 
-<div class="info-card">
+<div class="feature-grid">
 
-<div class="info-title">
-Current Interests
+<div class="feature-card">
+
+<div class="feature-title">
+Core Engineering Areas
 </div>
 
-<div class="focus-item">
-Autonomous systems validation & verification (V&V)
+<ul class="feature-list">
+<li>System-level debugging and root cause analysis</li>
+<li>Validation and verification of real-time software behavior</li>
+<li>Simulation-driven testing and defect reproduction</li>
+<li>Integration testing across software and hardware components</li>
+<li>Runtime behavior and timing analysis</li>
+<li>Large-scale C/C++ embedded systems</li>
+</ul>
+
 </div>
 
-<div class="focus-item">
-Simulation-based testing workflows
+<div class="feature-card">
+
+<div class="feature-title">
+Current Focus
 </div>
 
-<div class="focus-item">
-Real-time & safety-critical system analysis
-</div>
+<ul class="feature-list">
+<li>Autonomous systems validation</li>
+<li>Safety-critical system testing</li>
+<li>Simulation-based verification workflows</li>
+<li>Real-time system reliability engineering</li>
+<li>Embedded software architecture analysis</li>
+<li>Software-hardware interaction testing</li>
+</ul>
 
-<div class="focus-item">
-Software and hardware integration reliability
-</div>
-
-<div class="focus-item">
-Performance-aware embedded system design
-</div>
-
-<div class="focus-item">
-Large-scale industrial C/C++ architectures
 </div>
 
 </div>
 
-<div class="info-card">
-
-<div class="info-title">
-Current Direction
 </div>
 
-Transitioning from industrial embedded system validation toward roles involving autonomous systems testing, complex system verification, and safety-critical reliability engineering.
+<div class="content-card glass">
+
+<div class="section-title">
+Engineering Philosophy
+</div>
+
+<div class="content-text">
+
+I am particularly interested in roles where system reliability depends on understanding how components behave together at runtime — not only at the code level, but across the broader interaction between software, sensors, control systems, and hardware environments.
+
+This site serves as a structured record of my engineering work and learning. I document debugging cases, testing strategies, architectural insights, and runtime behavior analysis with an emphasis on clarity, reproducibility, and long-term maintainability.
+
+I am actively exploring opportunities in autonomous systems validation and testing, where I can build on my experience in real-time system analysis, simulation-driven debugging, and complex system verification within safety-critical environments.
+
+</div>
 
 </div>
 

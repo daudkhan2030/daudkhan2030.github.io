@@ -43,7 +43,8 @@ struct T_ROW_AVL_DATA
     CHAR  szTrayPos[TRAY_POS_LEN];
     CHAR  szAVLName[PROG_AVLNAME_AREA];
 };
-
+```
+```cpp
 ✅ C Struct
 typedef struct
 {
@@ -55,40 +56,43 @@ typedef struct
     CHAR  szDeviceComment[PROG_BARCODELABEL_AREA];
     CHAR  szPartComment[PROG_PARTCOMMENT_AREA];
 } T_FEEDERSETUP_DATA;
+```
+```
 🧠 Important Shortcut
 
-অনেক legacy C project-এ:
-typedef struct
-ব্যবহার করা হয় কারণ C language-এ:
+- অনেক legacy C project-এ:
+- typedef struct
+- ব্যবহার করা হয়
+```
 
-struct TEST
-লিখে variable declare করতে হয়।
-
-তাই typedef দিয়ে shorthand বানানো হয়।
+কারণ C language-এ:
+```
+- struct TEST লিখে variable declare করতে হয়।
+- তাই typedef দিয়ে shorthand বানানো হয়।
+```
 
 🔒 Private Constructor
 private:
     Logger() {}
 
 যদি constructor private হয় তাহলে:
-
+```
 - class-এর বাইরে থেকে object create করা যাবে না
 - controlled object creation enforce করা যায়
+- এটা সাধারণত Singleton pattern implement করার সময় use করা হয়।
+```
 
-এটা সাধারণত Singleton pattern implement করার সময় use করা হয়।
-
-🌸 Singleton Design Pattern
-
-Singleton-এর main idea:
-
-পুরো system-এ শুধুমাত্র ১টা object থাকবে।
-কিন্তু এর মানে এটা না যে:
-একসাথে এক জায়গায়ই কাজ করবে ❌
-
+🌸 Singleton Design Pattern - এর main idea:
+```
+- পুরো system-এ শুধুমাত্র ১টা object থাকবে।
+- কিন্তু এর মানে এটা না যে:
+- একসাথে এক জায়গায়ই কাজ করবে ❌
+```
 বরং:
-same object অনেক জায়গা থেকে use হতে পারে ✅
-অনেক class একই object access করতে পারে ✅
-
+```
+- same object অনেক জায়গা থেকে use হতে পারে ✅
+- অনেক class একই object access করতে পারে ✅
+```
 🧩 Singleton Example
 
 class Logger {
@@ -107,29 +111,23 @@ public:
 };
 
 🧠 GetInstance() এর Main Idea
-
-Logger::GetInstance()->Write();
-
-এটা:
-100টা class থেকেও call হতে পারে
-
-তবে:
-object একটাই
-multiple copy/object create হয় না
-
+```
+- Logger::GetInstance()->Write();
+- এটা: 100টা class থেকেও call হতে পারে
+- তবে: object একটাই
+- multiple copy/object create হয় না
+```
 ⚡ Why GetInstance() Uses static
 static Logger* s_instance;
 
+```
 এখানে:
-s_instance হলো shared pointer
-পুরো class-এর জন্য only one copy থাকে
-
-তাই:
-Logger::GetInstance()
-
-যেখান থেকেই call করো,
-সবাই same object পায়।
-
+- s_instance হলো shared pointer
+- পুরো class-এর জন্য only one copy থাকে
+- তাই: Logger::GetInstance()
+- যেখান থেকেই call করো,
+- সবাই same object পায়।
+```
 🧠 static এর আসল তাৎপর্য
 
 অনেকে ভাবে:
@@ -146,17 +144,19 @@ public:
 Test a;
 Test b;
 
+```
 এখানে:
-a এবং b দুইটা আলাদা object
-কিন্তু count একটাই shared variable
+- a এবং b দুইটা আলাদা object
+- কিন্তু count একটাই shared variable
 
 তাই:
 a.count
 b.count
 
-দুটোই same memory access করে।
-কারণ: count কে static করা হয়েছে।
-
+- দুটোই same memory access করে।
+- কারণ: count কে static করা হয়েছে।
+```
+```
 🧠 Important Understanding
 static নিজে Singleton না।
 
@@ -167,6 +167,7 @@ controlled creation
 shared static instance
 
 সব মিলিয়ে Singleton pattern তৈরি হয়।
+```
 
 🌸 Factory Method Pattern
 🧩 Basic Example
@@ -183,13 +184,13 @@ public:
         return new Product();
     }
 };
-
+```
 🧠 Components
 Pattern Part	Class
 Creator	Factory
 Concrete Creator	AFactory
 Product	Product
-
+```
 🔍 How It Works
 Factory* f = new AFactory();
 Product* p = f->Create();
@@ -202,25 +203,25 @@ Product* p = f->Create();
 - Caller যেন direct: new Product() না করে।
 
 কারণ future-এ creation logic complex হতে পারে:
-
-initialization লাগতে পারে
-config লাগতে পারে
-pool থেকে নিতে হতে পারে
-different type return হতে পারে
-
-এসব caller না জেনেও object use করতে পারবে।
-
+```
+- initialization লাগতে পারে
+- config লাগতে পারে
+- pool থেকে নিতে হতে পারে
+- different type return হতে পারে
+- এসব caller না জেনেও object use করতে পারবে।
+```
 🧠 Problem Solved by Factory Method
-
+```
 ✅ object creation centralized হয়
 ✅ caller dependency কমে
 ✅ future modification সহজ হয়
 ✅ creation logic এক জায়গায় থাকে
-
+```
 🎯 Key Insight
 
 “তুমি শুধু factory-কে বলো object লাগবে, factory নিজেই decide করবে কিভাবে সেটা বানাবে।”
 
+```
 🚀 Final Takeaway
 
 এই concepts গুলা legacy C++ system-এ খুব frequently দেখা যায়:
@@ -230,6 +231,7 @@ Factory Method
 static shared state
 controlled object creation
 abstraction-based object handling
+```
 
 বিশেষ করে:
 

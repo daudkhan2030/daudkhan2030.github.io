@@ -5,82 +5,129 @@ permalink: /cv/
 author_profile: false
 ---
 
-<h2>Education</h2>
+## Overview
 
-<div class="edu-item">
-  <div class="edu-left">
-    <strong>Master of Computer Science</strong><br>
-    American International University - Bangladesh (AIUB)
-  </div>
-  <div class="edu-date">Sep 2019 - Oct 2021</div>
-</div>
+Embedded Systems Engineer with experience in real-time industrial systems, system validation, simulation-driven debugging, and integration testing using C/C++.  
 
-<div class="edu-item">
-  <div class="edu-left">
-    <strong>Bachelor of Computer Science and Engineering</strong><br>
-    East West University
-  </div>
-  <div class="edu-date">May 2014 - Oct 2018</div>
-</div>
+Currently working on large-scale SMT systems in Japan, focusing on runtime behavior analysis, structured debugging, and verification of embedded software operating in RTOS-based environments.
 
-Work experience
-======
+Interested in autonomous systems validation, simulation-based testing, and large-scale system reliability engineering.
 
-* **Software Engineer** (Jul 2022 - Present)  
-  * SY System Co., Ltd. (Nagoya, Aichi, Japan)  
-  * Developed and tested embedded software components for industrial SMT systems using C/C++.  
-  * Performed root-cause analysis and debugging of firmware and system-level issues in real-time environments.  
-  * Validated real-time system behavior under RTOS-controlled environments.  
-  * Conducted integration testing across application, middleware, and hardware layers.  
-  * Executed system validation using simulation-based workflows (SILS) and analyzed results to ensure reliability.  
-  * Reproduced and resolved client-reported defects through structured debugging.  
-  * Designed and executed test cases based on system requirements to ensure comprehensive coverage.  
+---
 
-* **Management Information System Executive** (Jan 2021 - Dec 2021)  
-  * Rigs Marketing (Dhaka, Bangladesh)  
-  * Analyzed market and sales data to improve forecasting and support strategic decision-making.  
-  * Monitored field team performance and ensured operational coordination.  
-  * Managed Sales Force Automation (SFA) system including customer, lead, and pipeline data.  
-  * Optimized sales workflows through automation and reporting improvements.  
+## Timeline
 
-* **Trainee Developer** (Jan 2019 - Jul 2019)  
-  * nazdaqTechnologies Inc. (Dhaka, Bangladesh)  
-  * Assisted in developing backend applications using Spring Boot.  
-  * Implemented web scraping systems to collect and process structured data.  
-  
-Skills
-======
+### 2014 - 2018
+**Bachelor of Computer Science and Engineering**  
+East West University, Bangladesh
 
-* **Programming:** C++, C  
-* **Debugging & Testing:** Firmware debugging, system validation, issue reproduction, integration testing, test case design  
-* **Embedded Systems:** RTOS-based system testing, middleware integration, hardware-software interaction  
-* **Tools & Environment:** Visual Studio, TortoiseSVN, SILS (Software-in-the-Loop Simulation), internal tools  
+Focused on computer science fundamentals, algorithms, software engineering, databases, and system design principles.
 
-Projects
-======
+---
 
-* **Embedded Application Development (SMT System)** (Nov 2022 - Present)  
-  * Developed and modified application-layer firmware in an RTOS-based system.  
-  * Performed integration and system-level testing across application and middleware layers.  
-  * Conducted simulation-based validation (SILS) for real-time system behavior.  
-  * Analyzed logs and runtime behavior to debug and resolve system issues.  
-  * Translated system requirements into validation and testing scenarios.  
+### Jan 2019 - Jul 2019
+**Trainee Developer**  
+nazdaqTechnologies Inc., Dhaka, Bangladesh
 
-* **Web Scraping System Development** (Jan 2019 - Jul 2019)  
-  * Built a system to extract and process structured data from multiple websites.  
+Worked on backend development using Spring Boot and contributed to structured web scraping systems for data collection and processing.
 
-Publications
-======
+---
 
-* **Kitchen Grocery Items Monitoring System Based on Internet of Things**  
-  * Mohammad Salah Uddin, Md. Daud Ali Khan, Md. Naim Khan  
-  * International Journal of Computing and Network Technology, 2019  
-  * DOI: https://doi.org/10.12785/ijcnt/070202  
-  
-Languages
-======
+### Sep 2019 - Oct 2021
+**Master of Computer Science**  
+American International University - Bangladesh (AIUB)
 
-* Bangla (Native)  
-* English (Fluent)  
-* Japanese (Conversational, JLPT N3)  
-* Hindi/Urdu (Conversational)  
+Studied advanced computing topics including distributed systems, software engineering, networking, and research methodologies.
+
+Publication:
+- *Kitchen Grocery Items Monitoring System Based on Internet of Things*  
+  International Journal of Computing and Network Technology, 2019
+
+---
+
+### Jan 2021 - Dec 2021
+**Management Information System Executive**  
+Rigs Marketing, Dhaka, Bangladesh
+
+Worked on data analysis, sales automation systems, operational reporting, and workflow optimization to support business decision-making.
+
+---
+
+### Early 2022
+**Japanese Language & Career Transition Preparation**
+
+Focused on Japanese language studies, technical communication, and preparation for transitioning into Japan’s software and embedded systems industry.
+
+---
+
+### Jul 2022 - Present
+**Software Engineer**  
+SY System Co., Ltd., Nagoya, Aichi, Japan
+
+Working on embedded C/C++ applications for industrial SMT systems in RTOS-based environments.
+
+Main responsibilities include:
+- System-level debugging and root cause analysis
+- Simulation-based validation (SILS)
+- Integration testing across software and hardware layers
+- Runtime behavior analysis and issue reproduction
+- Requirement-based test scenario execution
+- Reliability validation of real-time industrial systems
+
+---
+
+## Technical Skills
+
+### Programming
+- C++
+- C
+
+### System Validation & Debugging
+- Root cause analysis
+- Runtime behavior analysis
+- Integration testing
+- Issue reproduction
+- Simulation-driven validation
+- Test case design
+
+### Embedded Systems
+- RTOS-based environments
+- Middleware integration
+- Hardware-software interaction
+- Real-time system behavior analysis
+
+### Tools & Environment
+- Visual Studio
+- TortoiseSVN
+- SILS (Software-in-the-Loop Simulation)
+- Internal debugging and validation tools
+
+---
+
+## Projects
+
+### Embedded SMT System Development
+**Nov 2022 - Present**
+
+- Developed and modified application-layer embedded software using C++
+- Performed integration and system-level testing
+- Conducted simulation-based verification workflows
+- Debugged runtime and synchronization-related issues
+- Analyzed logs and execution flow to identify defects
+
+---
+
+### Web Scraping System Development
+**Jan 2019 - Jul 2019**
+
+- Developed systems to collect and process structured web data
+- Assisted backend integration and automation workflows
+
+---
+
+## Languages
+
+- Bangla — Native
+- English — Fluent
+- Japanese — Conversational (JLPT N3)
+- Hindi / Urdu — Conversational

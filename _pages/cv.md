@@ -7,88 +7,92 @@ author_profile: false
 
 <style>
 
-.page__content{
-  max-width:1350px !important;
-}
-
-/* GLOBAL */
-
 body{
-  background:#f5f7fb;
-  color:#111827;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(56,189,248,0.18), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(168,85,247,0.18), transparent 28%),
+    #0f172a;
 }
 
-.cv-wrapper{
+.page__content{
+  max-width:1450px !important;
+}
+
+/* MAIN LAYOUT */
+
+.glass-container{
   display:grid;
-  grid-template-columns:300px 1fr;
-  gap:28px;
+  grid-template-columns:320px 1fr;
+  gap:24px;
   margin-top:20px;
+}
+
+/* GLASS EFFECT */
+
+.glass{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,0.12);
+  box-shadow:0 8px 32px rgba(0,0,0,0.25);
 }
 
 /* SIDEBAR */
 
 .sidebar{
-  background:#0f172a;
-  color:white;
-  border-radius:22px;
+  border-radius:28px;
   padding:28px;
-  height:fit-content;
   position:sticky;
   top:20px;
-  box-shadow:0 10px 35px rgba(15,23,42,0.15);
+  height:fit-content;
 }
 
 .name{
   font-size:2.2rem;
   font-weight:800;
+  color:#ffffff;
   line-height:1.1;
 }
 
 .role{
   margin-top:10px;
-  color:#38bdf8;
-  font-weight:600;
+  color:#7dd3fc;
   font-size:1rem;
+  font-weight:600;
 }
 
-.summary{
+.desc{
   margin-top:20px;
   color:#dbeafe;
   line-height:1.8;
-  font-size:0.96rem;
+  font-size:0.95rem;
 }
 
-.sidebar-section{
-  margin-top:30px;
+.section{
+  margin-top:28px;
 }
 
-.sidebar-title{
+.section-title{
   color:#7dd3fc;
-  font-size:0.8rem;
   text-transform:uppercase;
   letter-spacing:1px;
+  font-size:0.8rem;
   font-weight:700;
   margin-bottom:14px;
 }
 
 .skill{
   display:inline-block;
-  background:#111827;
-  border:1px solid #334155;
-  color:#e0f2fe;
-  padding:8px 12px;
+  padding:8px 13px;
+  margin:5px;
   border-radius:999px;
-  margin:4px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.12);
+  color:#e0f2fe;
   font-size:0.82rem;
 }
 
-.lang{
-  margin-bottom:10px;
-  color:#dbeafe;
-}
-
-/* MAIN */
+/* MAIN CONTENT */
 
 .main{
   display:flex;
@@ -97,116 +101,105 @@ body{
 }
 
 .card{
-  background:white;
-  border-radius:22px;
-  padding:30px;
-  border:1px solid #e5e7eb;
-  box-shadow:0 6px 22px rgba(15,23,42,0.04);
-}
-
-.hero-card{
-  background:linear-gradient(135deg,#0f172a,#1e293b);
+  border-radius:28px;
+  padding:28px;
   color:white;
-  border:none;
 }
 
-.hero-title{
-  font-size:2rem;
-  font-weight:800;
-  line-height:1.2;
-  margin-bottom:16px;
-}
-
-.hero-text{
-  line-height:1.9;
-  color:#dbeafe;
-  font-size:1rem;
+.card-title{
+  font-size:1.4rem;
+  font-weight:700;
+  margin-bottom:22px;
+  color:#ffffff;
 }
 
 .highlight{
-  color:#38bdf8;
+  color:#7dd3fc;
   font-weight:700;
 }
 
-.section-title{
-  font-size:1.3rem;
-  font-weight:700;
-  margin-bottom:24px;
-  color:#0f172a;
+/* TIMELINE */
+
+.timeline{
+  position:relative;
 }
 
-/* EXPERIENCE */
+.timeline:before{
+  content:"";
+  position:absolute;
+  left:108px;
+  top:0;
+  bottom:0;
+  width:2px;
+  background:rgba(255,255,255,0.12);
+}
 
-.exp-item{
+.timeline-item{
   display:grid;
-  grid-template-columns:180px 1fr;
-  gap:26px;
-  padding:22px 0;
-  border-bottom:1px solid #e5e7eb;
+  grid-template-columns:90px 1fr;
+  gap:38px;
+  margin-bottom:30px;
+  position:relative;
 }
 
-.exp-item:last-child{
-  border-bottom:none;
-}
-
-.exp-date{
-  color:#0284c7;
-  font-size:0.92rem;
+.timeline-date{
+  color:#7dd3fc;
   font-weight:700;
+  font-size:0.9rem;
 }
 
-.exp-title{
-  font-size:1.05rem;
-  font-weight:700;
+.timeline-content{
+  position:relative;
+  padding-left:12px;
+}
+
+.timeline-content:before{
+  content:"";
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:#38bdf8;
+  position:absolute;
+  left:-24px;
+  top:6px;
+  box-shadow:0 0 14px rgba(56,189,248,0.8);
+}
+
+.timeline-content strong{
+  display:block;
+  color:#ffffff;
   margin-bottom:6px;
-  color:#111827;
 }
 
-.exp-company{
-  color:#475569;
-  margin-bottom:12px;
-  font-size:0.95rem;
-}
-
-.exp-desc{
-  color:#4b5563;
-  line-height:1.8;
-}
-
-.exp-desc ul{
-  margin-top:10px;
-  padding-left:18px;
-}
-
-.exp-desc li{
-  margin-bottom:8px;
+.timeline-content p{
+  margin:0;
+  color:#dbeafe;
+  line-height:1.7;
 }
 
 /* GRID */
 
-.grid{
+.grid-2{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:22px;
 }
 
 .small-card{
-  background:white;
-  border-radius:22px;
-  padding:24px;
-  border:1px solid #e5e7eb;
-  box-shadow:0 6px 22px rgba(15,23,42,0.04);
+  border-radius:24px;
+  padding:22px;
+  color:white;
 }
 
 .small-title{
   font-size:1.1rem;
   font-weight:700;
-  margin-bottom:16px;
-  color:#111827;
+  margin-bottom:14px;
+  color:#ffffff;
 }
 
 .small-text{
-  color:#4b5563;
+  color:#dbeafe;
   line-height:1.8;
 }
 
@@ -214,7 +207,7 @@ body{
 
 @media(max-width:1000px){
 
-  .cv-wrapper{
+  .glass-container{
     grid-template-columns:1fr;
   }
 
@@ -223,12 +216,20 @@ body{
     top:0;
   }
 
-  .exp-item{
+  .timeline-item{
     grid-template-columns:1fr;
     gap:8px;
   }
 
-  .grid{
+  .timeline:before{
+    display:none;
+  }
+
+  .timeline-content:before{
+    display:none;
+  }
+
+  .grid-2{
     grid-template-columns:1fr;
   }
 
@@ -236,11 +237,11 @@ body{
 
 </style>
 
-<div class="cv-wrapper">
+<div class="glass-container">
 
 <!-- SIDEBAR -->
 
-<div class="sidebar">
+<div class="sidebar glass">
 
 <div class="name">
 MD Daud<br>Ali Khan
@@ -250,15 +251,13 @@ MD Daud<br>Ali Khan
 Embedded Systems & Validation Engineer
 </div>
 
-<div class="summary">
-Embedded Systems Engineer based in Japan with experience in RTOS-based industrial systems, simulation-driven debugging, runtime behavior analysis, and integration testing using C/C++.
-
-Interested in autonomous systems validation, safety-critical verification, and large-scale system reliability engineering.
+<div class="desc">
+Embedded Systems Engineer based in Japan working on RTOS-based industrial SMT systems involving simulation-driven debugging, runtime analysis, integration testing, and system-level validation using C/C++.
 </div>
 
-<div class="sidebar-section">
+<div class="section">
 
-<div class="sidebar-title">
+<div class="section-title">
 Core Skills
 </div>
 
@@ -276,16 +275,18 @@ Core Skills
 
 </div>
 
-<div class="sidebar-section">
+<div class="section">
 
-<div class="sidebar-title">
+<div class="section-title">
 Languages
 </div>
 
-<div class="lang">Bangla — Native</div>
-<div class="lang">English — Fluent</div>
-<div class="lang">Japanese — Conversational (JLPT N3)</div>
-<div class="lang">Hindi / Urdu — Conversational</div>
+<div class="desc">
+Bangla — Native<br>
+English — Fluent<br>
+Japanese — Conversational (JLPT N3)<br>
+Hindi / Urdu — Conversational
+</div>
 
 </div>
 
@@ -295,163 +296,111 @@ Languages
 
 <div class="main">
 
-<div class="card hero-card">
+<div class="card glass">
 
-<div class="hero-title">
-Building Reliability for Complex Real-Time Systems
+<div class="card-title">
+Current Focus
 </div>
 
-<div class="hero-text">
+Working on <span class="highlight">large-scale industrial SMT systems</span> involving RTOS-based embedded applications, SILS validation, runtime behavior analysis, and software-hardware integration testing.
 
-Currently working on <span class="highlight">large-scale industrial SMT systems</span> involving RTOS-based embedded applications, simulation-driven validation, runtime debugging, and software-hardware integration testing.
-
-My work focuses on understanding how systems behave under real execution conditions — analyzing timing behavior, runtime interactions, defect reproduction, and reliability issues across software and hardware layers.
-
-I am actively transitioning toward roles involving <span class="highlight">autonomous systems testing, V&V, and safety-critical system reliability engineering.</span>
+Interested in transitioning toward <span class="highlight">autonomous systems validation, safety-critical verification, and complex real-time system reliability engineering.</span>
 
 </div>
 
+<div class="card glass">
+
+<div class="card-title">
+Career Timeline
 </div>
 
-<div class="card">
+<div class="timeline">
 
-<div class="section-title">
-Experience & Education
-</div>
+<div class="timeline-item">
 
-<div class="exp-item">
-
-<div class="exp-date">
-Jul 2022 — Present
-</div>
-
-<div>
-<div class="exp-title">
-Software Engineer
-</div>
-
-<div class="exp-company">
-SY System Co., Ltd. · Nagoya, Japan
-</div>
-
-<div class="exp-desc">
-
-Working on embedded C/C++ industrial SMT systems in RTOS environments.
-
-<ul>
-<li>Performed system-level debugging and root cause analysis</li>
-<li>Validated runtime behavior using SILS workflows</li>
-<li>Executed integration testing across software and hardware layers</li>
-<li>Reproduced and analyzed real-world system defects</li>
-<li>Worked with large legacy C/C++ codebases and middleware systems</li>
-</ul>
-
-</div>
-</div>
-
-</div>
-
-<div class="exp-item">
-
-<div class="exp-date">
-Jan 2021 — Dec 2021
-</div>
-
-<div>
-<div class="exp-title">
-MIS Executive
-</div>
-
-<div class="exp-company">
-Rigs Marketing · Dhaka, Bangladesh
-</div>
-
-<div class="exp-desc">
-
-Worked on operational analytics, reporting automation, and workflow optimization to support data-driven business decisions.
-
-</div>
-</div>
-
-</div>
-
-<div class="exp-item">
-
-<div class="exp-date">
-Jan 2019 — Jul 2019
-</div>
-
-<div>
-<div class="exp-title">
-Trainee Developer
-</div>
-
-<div class="exp-company">
-nazdaqTechnologies · Dhaka, Bangladesh
-</div>
-
-<div class="exp-desc">
-
-Worked on Spring Boot backend systems and structured web scraping applications.
-
-</div>
-</div>
-
-</div>
-
-<div class="exp-item">
-
-<div class="exp-date">
-2019 — 2021
-</div>
-
-<div>
-<div class="exp-title">
-Master of Computer Science
-</div>
-
-<div class="exp-company">
-American International University-Bangladesh (AIUB)
-</div>
-
-<div class="exp-desc">
-
-Completed postgraduate studies and published IoT-based research work.
-
-</div>
-</div>
-
-</div>
-
-<div class="exp-item">
-
-<div class="exp-date">
+<div class="timeline-date">
 2014 — 2018
 </div>
 
-<div>
-<div class="exp-title">
-Bachelor of Computer Science & Engineering
-</div>
-
-<div class="exp-company">
-East West University
-</div>
-
-<div class="exp-desc">
-
-Focused on algorithms, software engineering, and computer science fundamentals.
-
-</div>
+<div class="timeline-content">
+<strong>B.Sc. in Computer Science & Engineering</strong>
+<p>East West University — focused on algorithms, software engineering, and core computer science fundamentals.</p>
 </div>
 
 </div>
 
+<div class="timeline-item">
+
+<div class="timeline-date">
+2019
 </div>
 
-<div class="grid">
+<div class="timeline-content">
+<strong>Trainee Developer — nazdaqTechnologies</strong>
+<p>Worked on Spring Boot backend systems and structured web scraping applications.</p>
+</div>
 
-<div class="small-card">
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-date">
+2019 — 2021
+</div>
+
+<div class="timeline-content">
+<strong>M.Sc. in Computer Science</strong>
+<p>American International University-Bangladesh (AIUB) with IoT-based research publication.</p>
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-date">
+2021
+</div>
+
+<div class="timeline-content">
+<strong>MIS Executive — Rigs Marketing</strong>
+<p>Worked on reporting automation, operational analytics, and workflow optimization.</p>
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-date">
+2022
+</div>
+
+<div class="timeline-content">
+<strong>Japanese Language & Career Transition</strong>
+<p>Prepared for transition into Japan’s software and embedded systems industry.</p>
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-date">
+2022 — Present
+</div>
+
+<div class="timeline-content">
+<strong>Software Engineer — SY System Co., Ltd.</strong>
+<p>Embedded C/C++ industrial SMT systems involving SILS validation, runtime debugging, and integration testing in RTOS environments.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="grid-2">
+
+<div class="small-card glass">
 
 <div class="small-title">
 Projects
@@ -461,13 +410,13 @@ Projects
 
 <strong>Embedded SMT System Development</strong><br><br>
 
-Application-layer development, SILS validation, runtime debugging, integration testing, and system reliability analysis for industrial embedded systems.
+Application-layer development, system validation, runtime debugging, SILS workflows, and integration testing for large-scale industrial systems.
 
 </div>
 
 </div>
 
-<div class="small-card">
+<div class="small-card glass">
 
 <div class="small-title">
 Publication

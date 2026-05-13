@@ -1,4 +1,3 @@
-```md id="cvcompact9"
 ---
 title: "CV"
 layout: splash
@@ -8,87 +7,74 @@ author_profile: false
 
 <style>
 .cv-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 20px;
-  margin-top: 15px;
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:20px;
+  margin-top:20px;
 }
 
-.cv-card {
-  background: #161b22;
-  border-left: 4px solid #58a6ff;
-  padding: 16px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+.cv-card{
+  background:#161b22;
+  border-left:4px solid #58a6ff;
+  padding:16px;
+  border-radius:10px;
+  margin-bottom:15px;
 }
 
-.cv-card h3 {
-  margin-top: 0;
-  color: #58a6ff;
+.cv-card h3{
+  margin-top:0;
+  color:#58a6ff;
 }
 
-.timeline-item {
-  margin-bottom: 12px;
-  padding-left: 12px;
-  border-left: 2px solid #30363d;
+.timeline-item{
+  margin-bottom:14px;
+  padding-left:12px;
+  border-left:2px solid #30363d;
 }
 
-.timeline-date {
-  color: #f78166;
-  font-weight: bold;
-  font-size: 0.95rem;
+.timeline-date{
+  color:#f78166;
+  font-weight:bold;
 }
 
-.highlight {
-  color: #79c0ff;
-  font-weight: 600;
+.skill{
+  display:inline-block;
+  background:#21262d;
+  padding:5px 10px;
+  margin:4px;
+  border-radius:20px;
+  font-size:0.85rem;
 }
 
-.skill-tag {
-  display: inline-block;
-  background: #21262d;
-  color: #c9d1d9;
-  padding: 5px 10px;
-  border-radius: 20px;
-  margin: 4px 4px 0 0;
-  font-size: 0.85rem;
-  border: 1px solid #30363d;
+.banner{
+  background:linear-gradient(135deg,#1f2937,#111827);
+  padding:22px;
+  border-radius:12px;
+  margin-bottom:20px;
 }
 
-.top-banner {
-  background: linear-gradient(135deg, #1f2937, #111827);
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #30363d;
+.banner-title{
+  font-size:2rem;
+  font-weight:bold;
+  color:#58a6ff;
+  margin-bottom:10px;
 }
 
-.top-banner h1 {
-  margin-bottom: 8px;
-  color: #58a6ff;
-}
-
-.top-banner p {
-  margin: 0;
-  color: #c9d1d9;
-}
-
-@media(max-width: 900px){
-  .cv-grid {
-    grid-template-columns: 1fr;
+@media(max-width:900px){
+  .cv-grid{
+    grid-template-columns:1fr;
   }
 }
 </style>
 
-<div class="top-banner">
+<div class="banner">
+  <div class="banner-title">MD Daud Ali Khan</div>
 
-# MD Daud Ali Khan
+  Embedded Systems Engineer focused on real-time system validation, simulation-driven debugging, integration testing, and large-scale C/C++ industrial systems.
 
-Embedded Systems Engineer focused on **real-time system validation, simulation-driven debugging, integration testing, and large-scale C/C++ industrial systems**.  
+  <br><br>
 
-Currently working in Japan on **RTOS-based SMT systems**, analyzing runtime behavior, reproducing complex defects, and validating software-hardware interactions. Interested in **autonomous systems testing, V&V, and safety-critical system reliability**.
-
+  Currently working in Japan on RTOS-based SMT systems involving runtime analysis, defect reproduction, SILS validation, and software-hardware interaction testing.
 </div>
 
 <div class="cv-grid">
@@ -96,50 +82,48 @@ Currently working in Japan on **RTOS-based SMT systems**, analyzing runtime beha
 <div>
 
 <div class="cv-card">
-
-### Timeline
+<h3>Timeline</h3>
 
 <div class="timeline-item">
 <div class="timeline-date">2014 - 2018</div>
-B.Sc. in CSE — <span class="highlight">East West University</span>
+B.Sc. in CSE — East West University
 </div>
 
 <div class="timeline-item">
 <div class="timeline-date">Jan 2019 - Jul 2019</div>
-Trainee Developer — <span class="highlight">nazdaqTechnologies</span>  
-Worked on Spring Boot backend & web scraping systems.
+Trainee Developer — nazdaqTechnologies  
+Spring Boot backend & web scraping systems
 </div>
 
 <div class="timeline-item">
 <div class="timeline-date">Sep 2019 - Oct 2021</div>
-M.Sc. in Computer Science — <span class="highlight">AIUB</span>  
-Published IoT-based research paper.
+M.Sc. in Computer Science — AIUB  
+Published IoT-based research paper
 </div>
 
 <div class="timeline-item">
 <div class="timeline-date">Jan 2021 - Dec 2021</div>
-MIS Executive — <span class="highlight">Rigs Marketing</span>  
-Data analysis, reporting & sales automation.
+MIS Executive — Rigs Marketing  
+Data analysis & workflow automation
 </div>
 
 <div class="timeline-item">
 <div class="timeline-date">Early 2022</div>
-Japanese language & engineering career transition preparation.
+Japanese language & engineering career transition preparation
 </div>
 
 <div class="timeline-item">
 <div class="timeline-date">Jul 2022 - Present</div>
-Software Engineer — <span class="highlight">SY System Co., Ltd.</span>  
-Embedded C/C++, SILS validation, RTOS testing, runtime debugging, integration testing.
+Software Engineer — SY System Co., Ltd.  
+Embedded C/C++, RTOS testing, SILS validation, runtime debugging
 </div>
 
 </div>
 
 <div class="cv-card">
+<h3>Publication</h3>
 
-### Publication
-
-**Kitchen Grocery Items Monitoring System Based on IoT**  
+<b>Kitchen Grocery Items Monitoring System Based on IoT</b><br>
 International Journal of Computing and Network Technology (2019)
 
 </div>
@@ -149,41 +133,35 @@ International Journal of Computing and Network Technology (2019)
 <div>
 
 <div class="cv-card">
+<h3>Core Skills</h3>
 
-### Core Skills
-
-<span class="skill-tag">C++</span>
-<span class="skill-tag">C</span>
-<span class="skill-tag">RTOS</span>
-<span class="skill-tag">SILS</span>
-<span class="skill-tag">System Validation</span>
-<span class="skill-tag">Root Cause Analysis</span>
-<span class="skill-tag">Integration Testing</span>
-<span class="skill-tag">Runtime Debugging</span>
-<span class="skill-tag">Middleware Integration</span>
-<span class="skill-tag">Simulation Testing</span>
-<span class="skill-tag">Hardware-Software Interaction</span>
-<span class="skill-tag">Visual Studio</span>
-<span class="skill-tag">TortoiseSVN</span>
+<span class="skill">C++</span>
+<span class="skill">C</span>
+<span class="skill">RTOS</span>
+<span class="skill">SILS</span>
+<span class="skill">System Validation</span>
+<span class="skill">Integration Testing</span>
+<span class="skill">Root Cause Analysis</span>
+<span class="skill">Runtime Debugging</span>
+<span class="skill">Middleware</span>
+<span class="skill">Visual Studio</span>
+<span class="skill">TortoiseSVN</span>
 
 </div>
 
 <div class="cv-card">
+<h3>Current Focus</h3>
 
-### Current Focus
-
-- Real-time system behavior analysis  
+- Autonomous systems validation  
+- Real-time behavior analysis  
 - Simulation-driven debugging  
-- Large-scale legacy C/C++ systems  
 - Embedded system reliability  
-- Autonomous systems validation & V&V  
-- Safety-critical testing workflows  
+- Large-scale C/C++ systems  
 
 </div>
 
 <div class="cv-card">
-
-### Languages
+<h3>Languages</h3>
 
 - Bangla — Native  
 - English — Fluent  
@@ -195,4 +173,3 @@ International Journal of Computing and Network Technology (2019)
 </div>
 
 </div>
-```

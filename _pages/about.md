@@ -35,7 +35,8 @@ body{
   grid-template-columns:320px minmax(0,1fr);
   gap:28px;
   align-items:start;
-  margin-top:18px;
+  margin-top:20px;
+  width:100%;
 }
 
 /* =========================
@@ -59,26 +60,28 @@ body{
 
 .sidebar{
   padding:34px 28px;
-  position:sticky;
-  top:20px;
-  overflow:hidden;
+  position:relative;
+  width:100%;
+  min-width:280px;
+  box-sizing:border-box;
+  overflow:visible;
 }
 
 .name{
-  font-size:2.1rem;
+  font-size:2.25rem;
   font-weight:800;
   color:white;
-  line-height:1.2;
+  line-height:1.1;
   letter-spacing:-0.5px;
-  white-space:nowrap;
+  white-space:normal;
 }
 
 .role{
-  margin-top:14px;
+  margin-top:12px;
   color:#5cc8ff;
-  font-size:1.15rem;
+  font-size:1rem;
   font-weight:600;
-  line-height:1.7;
+  line-height:1.6;
 }
 
 .summary{

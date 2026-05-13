@@ -3,14 +3,19 @@ title: "CV"
 layout: splash
 permalink: /cv/
 author_profile: false
+classes: wide
 ---
 
 <style>
 
 /* ===== PAGE ===== */
 
+.page{
+  max-width:100% !important;
+}
+
 .page__content{
-  max-width:1400px !important;
+  max-width:100% !important;
 }
 
 body{

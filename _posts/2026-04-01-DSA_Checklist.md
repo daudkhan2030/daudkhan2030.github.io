@@ -9,7 +9,7 @@ categories:
 | **Topics** | **Concept** | **Understood** | **Leetcode Solved in this** | **Revision Date** | Others | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | 01 | 🔰 [Fundamentals](https://www.geeksforgeeks.org/dsa/swap-two-numbers-without-using-temporary-variable/) | ⬜ |  |  |  |  |
-|  | ⬜ [Programming Basics]((https://www.notion.so/Need-to-remember-stuffs-3413dff1c30a8040880ccc78a3583098?source=copy_link))  (I/O, Conditions, Loops, Functions, OOP) | ⬜ |  |  |  |  |
+|  | ⬜ [Programming Basics]((https://www.notion.so/Need-to-remember-stuffs-3413dff1c30a8040880ccc78a3583098?source=copy_link))  (I/O, Conditions, Loops, Functions, OOP) | 🟢 |  |  |  |  |
 |  | ⬜ Complexity Analysis (Big-O, Theta, Omega, Time, Space) | ⬜ |  |  |  |  |
 | 02 | 🧮 Maths, Pattern & Recursion | ⬜ |  |  |  |  |
 |  | ⬜ Maths Basics | ⬜ |  |  |  |  |
@@ -17,7 +17,7 @@ categories:
 |  | ⬜ Recursion Basics | ⬜ |  |  |  |  |
 |  | ⬜ Recursion Analysis | ⬜ |  |  |  |  |
 | 03 | 🟦 Array & String | ⬜ |  |  |  |  |
-|  | ⬜ Array | ⬜ |  |  |  |  |
+|  | ⬜ Array | 🟢 |  |  |  |  |
 |  | ⬜ String | ⬜ |  |  |  |  |
 |  | ⬜ Matrix / Grid (2D Array) | ⬜ |  |  |  |  |
 | 04 | 🔍 Searching | ⬜ |  |  |  |  |
@@ -31,14 +31,14 @@ categories:
 |  | ⬜ Merge Sort / Merge Patterns | ⬜ |  |  |  |  |
 |  | ⬜ Cycle Sort Patterns | ⬜ |  |  |  |  |
 | 06 | 🧩 Bit Manipulation | ⬜ |  |  |  |  |
-|  | ⬜ Bitwise Basics | ⬜ |  |  |  |  |
+|  | ⬜ Bitwise Basics | 🟢 |  |  |  |  |
 |  | ⬜ Bit Manipulation with Arrays | ⬜ |  |  |  |  |
 |  | ⬜ Subsets & Subsequences (Bit based) | ⬜ |  |  |  |  |
 | 07 | ⚡ Hashing | ⬜ |  |  |  |  |
 |  | ⬜ Hash Table Basics | ⬜ |  |  |  |  |
 |  | ⬜ Frequency-based Hashing | ⬜ |  |  |  |  |
 | 08 | 👣 Two Pointer | ⬜ |  |  |  |  |
-| 09 | 🪟 Sliding Window | ⬜ |  |  |  |  |
+| 09 | 🪟 Sliding Window | 🟢 |  |  |  |  |
 |  | ⬜ Fixed Length Window | ⬜ |  |  |  |  |
 |  | ⬜ Variable Length Window | ⬜ |  |  |  |  |
 |  | ⬜ Minimum Window Problems | ⬜ |  |  |  |  |

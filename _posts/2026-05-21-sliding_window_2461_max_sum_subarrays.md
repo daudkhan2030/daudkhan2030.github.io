@@ -35,7 +35,8 @@ categories:
 অর্থাৎ এটা classic Fixed-size Sliding Window problem।
 
 
-🌸 Frequency Map Understanding
+
+## 🌸 Frequency Map Understanding
 
 এই line: unordered_map<int, int> count;
 
@@ -65,7 +66,8 @@ will be stored.
 বরং: Current sliding window এর frequency।
 
 
-🌸 Interesting Part — ++count[nums[i]]
+
+## 🌸 Interesting Part — ++count[nums[i]]
 
 - এই line অনেক important: if (++count[nums[i]] == 1)
 
@@ -83,7 +85,9 @@ Incremented value 1 কিনা check হয়
 - বুঝতে হবে number first time window তে এসেছে
 - তাই distinct++
 
-🌸 Distinct Count কেন দরকার?
+
+
+## 🌸 Distinct Count কেন দরকার?
 if (distinct == k)
 
 মানে:
@@ -96,22 +100,22 @@ Distinct elements = k
 - সব elements unique।
 - এটাই problem এর main condition।
 
-🌸 Sliding Window এর Real Beauty
 
-Naive solution এ:  প্রতিবার নতুন subarray calculate করতে হতো
-
-কিন্তু Sliding Window এ:
-
+## 🌸 Sliding Window এর Real Beauty
+- Naive solution এ:  প্রতিবার নতুন subarray calculate করতে হতো
+- কিন্তু Sliding Window এ:
+```
 - new element add
 - old element remove
 - sum update
 - frequency update
+```
 
-সব O(1) average time এ হচ্ছে।
+- সব O(1) average time এ হচ্ছে।
 
 তাই পুরো solution:  O(n)
 
-🌸 Optimal Sliding Window Solution (C++)
+## 🌸 Optimal Sliding Window Solution (C++)
 
 ```cpp
 class Solution {
@@ -147,7 +151,7 @@ class Solution {
 };
 ```
 
-🌸 Personal Note --> এই problem করতে গিয়ে আবার বুঝলাম:
+## 🌸 Personal Note --> এই problem করতে গিয়ে আবার বুঝলাম:
 
 - Interview এ অনেক সময় syntax এর চেয়ে বেশি important হচ্ছে pattern recognition।
 

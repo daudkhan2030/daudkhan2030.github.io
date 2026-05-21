@@ -1,5 +1,5 @@
 ---
-title: 🌸 LeetCode 2461 — Sliding Window, Frequency Map & Distinct Count"
+title: 🌸 LeetCode Problem 2461: Frequency Map & Distinct Count - Sliding Window"
 date: 2026-05-21
 layout: single
 categories:

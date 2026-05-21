@@ -36,43 +36,39 @@ maximumSubarraySum(vector<int>& nums, int k)
 
 অর্থাৎ এটা classic Fixed-size Sliding Window problem।
 
+
 🌸 Frequency Map Understanding
 
 এই line:
-
 unordered_map<int, int> count;
 
 এখানে:
+key   -> number    --> aka left int always key
+value -> frequency --> aka right int always value
 
-key   -> number
-value -> frequency
-
-যেমন:
-
-nums = {1,2,5,4}
+যেমন: unordered_map<int, int> nums = {1,2,5,4}
 
 তাহলে internally:
 
+```
 {
  1:1,
  2:1,
  5:1,
  4:1
 }
+```
 
-store হতে পারে।
+will be stored.
 
-এটা পুরো array এর frequency না।
+- এটা পুরো array এর frequency না।
 
-বরং:
+বরং: Current sliding window এর frequency।
 
-Current sliding window এর frequency।
 
 🌸 Interesting Part — ++count[nums[i]]
 
-এই line অনেক important:
-
-if (++count[nums[i]] == 1)
+এই line অনেক important: if (++count[nums[i]] == 1)
 
 এখানে কয়েকটা operation হয়:
 

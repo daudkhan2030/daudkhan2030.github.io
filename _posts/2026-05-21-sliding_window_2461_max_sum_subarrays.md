@@ -1,5 +1,5 @@
 ---
-title: 🌸 LeetCode Problem 2461: Frequency Map & Distinct Count - Sliding Window"
+title: "🌸 LeetCode Problem 2461: Frequency Map & Distinct Count - Sliding Window"
 date: 2026-05-21
 layout: single
 categories:
@@ -22,9 +22,7 @@ categories:
 
 প্রথমে confusing লাগছিল `k` constant নাকি dynamic।
 
-আসলে:
-
-maximumSubarraySum(vector<int>& nums, int k)
+আসলে: maximumSubarraySum(vector<int>& nums, int k)
 
 এখানে k হচ্ছে input parameter।
 
@@ -39,12 +37,13 @@ maximumSubarraySum(vector<int>& nums, int k)
 
 🌸 Frequency Map Understanding
 
-এই line:
-unordered_map<int, int> count;
+এই line: unordered_map<int, int> count;
 
 এখানে:
+```
 key   -> number    --> aka left int always key
 value -> frequency --> aka right int always value
+```
 
 যেমন: unordered_map<int, int> nums = {1,2,5,4}
 
@@ -68,7 +67,7 @@ will be stored.
 
 🌸 Interesting Part — ++count[nums[i]]
 
-এই line অনেক important: if (++count[nums[i]] == 1)
+- এই line অনেক important: if (++count[nums[i]] == 1)
 
 এখানে কয়েকটা operation হয়:
 

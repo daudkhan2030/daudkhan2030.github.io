@@ -3,7 +3,7 @@ title: 🌸 LeetCode 2461 — Sliding Window, Frequency Map & Distinct Count"
 date: 2026-05-21
 layout: single
 categories:
-  - systems
+  - engineering
 ---
 
 # 🌸 Sliding Window Pattern বুঝার একটা সুন্দর Example
@@ -24,16 +24,15 @@ categories:
 
 আসলে:
 
-```cpp
 maximumSubarraySum(vector<int>& nums, int k)
 
 এখানে k হচ্ছে input parameter।
 
 মানে:
 
-User / Problem setter k পাঠাবে
-পুরো execution এ k same থাকবে
-Window size fixed থাকবে
+- User / Problem setter k পাঠাবে
+- পুরো execution এ k same থাকবে
+- Window size fixed থাকবে
 
 অর্থাৎ এটা classic Fixed-size Sliding Window problem।
 
@@ -77,15 +76,18 @@ if (++count[nums[i]] == 1)
 
 এখানে কয়েকটা operation হয়:
 
+```
 count[nums[i]] access হয়
 Key না থাকলে default value 0 create হয়
 Frequency increment হয়
 Incremented value 1 কিনা check হয়
+```
 
 যদি 1 হয়:
 
-বুঝতে হবে number first time window তে এসেছে
-তাই distinct++
+- বুঝতে হবে number first time window তে এসেছে
+- তাই distinct++
+
 🌸 Distinct Count কেন দরকার?
 if (distinct == k)
 
@@ -96,29 +98,27 @@ Distinct elements = k
 
 অর্থাৎ:
 
-সব elements unique।
-
-এটাই problem এর main condition।
+- সব elements unique।
+- এটাই problem এর main condition।
 
 🌸 Sliding Window এর Real Beauty
 
-Naive solution এ:
-
-প্রতিবার নতুন subarray calculate করতে হতো
+Naive solution এ:  প্রতিবার নতুন subarray calculate করতে হতো
 
 কিন্তু Sliding Window এ:
 
-new element add
-old element remove
-sum update
-frequency update
+- new element add
+- old element remove
+- sum update
+- frequency update
 
 সব O(1) average time এ হচ্ছে।
 
-তাই পুরো solution:
+তাই পুরো solution:  O(n)
 
-O(n)
 🌸 Optimal Sliding Window Solution (C++)
+
+```cpp
 class Solution {
  public:
   long long maximumSubarraySum(vector<int>& nums, int k) {
@@ -150,16 +150,16 @@ class Solution {
     return ans;
   }
 };
-🌸 Personal Note
+```
 
-এই problem করতে গিয়ে আবার বুঝলাম:
+🌸 Personal Note --> এই problem করতে গিয়ে আবার বুঝলাম:
 
-Interview এ অনেক সময় syntax এর চেয়ে বেশি important হচ্ছে pattern recognition।
+- Interview এ অনেক সময় syntax এর চেয়ে বেশি important হচ্ছে pattern recognition।
 
 কারণ:
-
+```
 Sliding Window identify করা
 Frequency map বুঝা
 Window enter/exit logic বুঝা
-
+```
 এগুলোই মূল skill।

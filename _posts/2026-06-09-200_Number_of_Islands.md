@@ -56,7 +56,7 @@ void dfs(vector<vector<char>>& grid, int i, int j) {
   - Efficiency: যদিও DFS অনেক বেশি concise, তবে মনে রাখতে হবে—খুব বড় গ্রিডের ক্ষেত্রে গভীর রিকার্সনের কারণে Stack Overflow হওয়ার ঝুঁকি থাকে। সেদিক থেকে BFS মেমোরির দিক দিয়ে কিছুটা বেশি সেফ (Safe)।
   
 Complexity Analysis
-Time Complexity: $O(M \times N)$, যেখানে $M$ হলো গ্রিডের সারি (rows) এবং $N$ হলো কলাম (columns)। কারণ আমরা প্রতিটি সেল বড়জোর একবারই ভিজিট করছি।
-Space Complexity: $O(M \times N)$, রিকার্সিভ স্ট্যাকের (recursive stack) জন্য worst-case scenario-তে এতখানি মেমোরি প্রয়োজন হতে পারে।
+Time Complexity: O(M X N), যেখানে $M$ হলো গ্রিডের সারি (rows) এবং $N$ হলো কলাম (columns)। কারণ আমরা প্রতিটি সেল বড়জোর একবারই ভিজিট করছি।
+Space Complexity: O(M X N), রিকার্সিভ স্ট্যাকের (recursive stack) জন্য worst-case scenario-তে এতখানি মেমোরি প্রয়োজন হতে পারে।
 
   এই প্রজেক্টটি করার মাধ্যমে আমি Grid Traversal এবং Recursion-এর বেসিক কনসেপ্টগুলোকে আরও ভালোভাবে আয়ত্ত করতে পেরেছি। ধন্যবাদ!

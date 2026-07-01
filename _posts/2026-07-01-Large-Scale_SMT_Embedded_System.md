@@ -54,10 +54,6 @@ Execution Model:
 Preemptive RTOS
 ```
 
-Codebase analysis-এ কোনো SMP (Symmetric Multi Processing) বা multi-core scheduling reference পাওয়া যায়নি।
-
-সুতরাং practical assumption:
-
 ```text
 1 MCU Board
 =
@@ -125,11 +121,7 @@ CPU খুব দ্রুত task পরিবর্তন করে।
 
 ফলে মনে হয় সবকিছু একসাথে চলছে।
 
-এটিই:
-
-```text
-Concurrency
-```
+এটিই Concurrency.
 
 ---
 
@@ -144,9 +136,6 @@ Core 3 → Task C
 ```
 
 অর্থাৎ সত্যিকারের simultaneous execution।
-
-এই architecture-এ per MCU board এমন multi-core execution পাওয়া যায়নি।
-
 ---
 
 # Twin Robot Configuration
@@ -234,7 +223,7 @@ call count:
 RTOS Configuration:
 
 ```cpp
-#define OS_TASK_KIND_MAX (400)
+#define OS_TASK_KIND_MAXX (400)
 ```
 
 ---
@@ -252,8 +241,8 @@ RTOS Task
 কিন্তু এই system-এ:
 
 ```text
-CSta*
-CCoo*
+CState*
+CCoordinator*
 ```
 
 সাধারণত RTOS Task নয়।
@@ -281,7 +270,7 @@ Sensor Detects Error
 ↓
 EMG Watching Task
 ↓
-OSSendEvent(EV_ALARM_STOP)
+OSSendEvent(EVENT_ALARM_STOP)
 ↓
 State Machine Task Receives Event
 ↓
@@ -332,13 +321,13 @@ Codebase analysis:
 Event count:
 
 ```text
-~2,888 EV_* definitions
+~2,888 EVENT_* definitions
 ```
 
 Maximum supported:
 
 ```cpp
-OS_EVENTID_MAX = 16384
+OS_EVENT_ID_MAX = 16384
 ```
 
 এই system-এর communication backbone মূলত Event Architecture।
@@ -362,7 +351,7 @@ TraceID.h Object No
 ↓
 TRIGGER_*
 ↓
-EV_*
+EVENT_*
 ```
 
 এই তিনটি layer অনুসরণ করলে বেশিরভাগ runtime behavior trace করা যায়।
@@ -372,22 +361,22 @@ EV_*
 # Conceptual State Hierarchy
 
 ```text
-CStaMachine
+CStateMachine
 │
-├── CStaAutopilot
-├── CStaWorking
-├── CStaWaitingBoard
+├── CStateAutopilot
+├── CStateWorking
+├── CStateWaitingBoard
 │
-├── CStaAbnormalWatching
+├── CStateAbnormalMonitoring
 │     │
-│     └── CStaAbnormalStoping
+│     └── CStateAbnormalStop
 │            │
-│            ├── CStaAlarmStoping
-│            ├── CStaMotionStoping
-│            ├── CStaKeepClawEmergencyStoping
+│            ├── CStateAlarmStop
+│            ├── CStateMotionStop
+│            ├── CStateHandPoweredEmergencyStop
 │            └── ...
 │
-└── CStaAbnormalReleaseCtl
+└── CStateAbnormalRemoveControler
 ```
 
 ---

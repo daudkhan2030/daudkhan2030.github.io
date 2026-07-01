@@ -1,3 +1,10 @@
+---
+title: "👀👛👛 RTOS Task, Thread, CPU এবং SMT Machine System — একটি Practical Mental Model"
+date: 2026-06-09
+layout: single
+categories:
+  - engineering
+---
 # RTOS Task, Thread, CPU এবং SMT Machine System — একটি Practical Mental Model
 
 ## কেন এই নোট?

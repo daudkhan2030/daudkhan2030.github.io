@@ -28,7 +28,7 @@ Docker Desktop
 WSL2 (Windows Subsystem for Linux)
 Open WebUI
 Ollama
-Qwen3:8B (Local LLM)
+gemma3:4b (Local LLM)
 Sentence Transformers (Default Embedding)
 ```
 
@@ -57,7 +57,7 @@ Answer based on my documents
 
 ---
 
-# Step 1 : Docker Desktop Install
+# Step 1 : Docker Desktop and Ollama Install
 
 প্রথমে Windows-এ Docker Desktop Install করেছি।
 
@@ -125,7 +125,7 @@ Open WebUI-এর সাথে Ollama ব্যবহার করেছি।
 Model হিসেবে
 
 ```text
-qwen3:8b
+gemma3:4b
 ```
 
 ব্যবহার করেছি।
@@ -136,9 +136,7 @@ qwen3:8b
 
 ```text
 Knowledge
-
 ↓
-
 Create Knowledge
 ```
 
@@ -160,7 +158,6 @@ Knowledge Collection-এর ভিতরে নিজের Japanese PDF Upload 
 
 ```text
 職務要件・昇格基準定義書.pdf
-
 sateimanual1.pdf
 ```
 
@@ -228,7 +225,7 @@ ollama ps
 ## Model Information
 
 ```powershell
-ollama show qwen3:8b
+ollama show gemma3:4b
 ```
 
 ---
@@ -251,7 +248,7 @@ Embedding
 Vector Search
      |
      ▼
-Qwen3:8B
+gemma3:4b
      |
      ▼
 Answer generated from my uploaded documents
@@ -262,7 +259,7 @@ Answer generated from my uploaded documents
 # Outcome
 
 এই Setup-এর মাধ্যমে আমি Local Machine-এই নিজের Japanese Documents-এর উপর AI Question Answering System তৈরি করতে পেরেছি।
-
 যেহেতু সবকিছু Local Machine-এ চলছে, তাই কোনো Cloud API বা Paid AI Service ব্যবহার করতে হয়নি। নিজের Documents Upload করে English-এ প্রশ্ন করলে AI সেই Documents-এর Context অনুযায়ী উত্তর দিতে পারে।
-
 এটি Technical Documentation, Manuals, Requirements, Design Documents এবং Knowledge Management-এর জন্য একটি কার্যকর Local RAG Solution।
+
+** প্রতিদিন Ollama আর Docker ওপেন করে এরপরে ব্রাউজারে http://127.0.0.1:3000/ ওপেন করলে দেখতে পাবো লোকাল এআই । আর শুধু কাজ হলো র‍্যাগ করতে দেওয়ার জন্য Knowledge এ ফাইলস অ্যাড করা । 

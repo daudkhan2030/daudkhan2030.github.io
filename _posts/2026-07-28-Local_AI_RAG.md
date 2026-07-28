@@ -263,3 +263,9 @@ Answer generated from my uploaded documents
 এটি Technical Documentation, Manuals, Requirements, Design Documents এবং Knowledge Management-এর জন্য একটি কার্যকর Local RAG Solution।
 
 ** প্রতিদিন Ollama আর Docker ওপেন করে এরপরে ব্রাউজারে http://127.0.0.1:3000/ ওপেন করলে দেখতে পাবো লোকাল এআই । আর শুধু কাজ হলো র‍্যাগ করতে দেওয়ার জন্য Knowledge এ ফাইলস অ্যাড করা । 
+
+<img width="1826" height="909" alt="image" src="https://github.com/user-attachments/assets/ae899e22-7814-4214-926c-307c4bcf53b4" />
+
+<img width="1454" height="878" alt="image" src="https://github.com/user-attachments/assets/59eac261-2ca1-419b-9b6f-60aa307f2a9d" />
+
+
